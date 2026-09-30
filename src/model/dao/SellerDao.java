@@ -1,5 +1,6 @@
 package model.dao;
 
+import model.entities.Department;
 import model.entities.Seller;
 
 import java.util.List;
@@ -11,4 +12,5 @@ public interface SellerDao {
     void deleteById(Integer id);
     Seller findById(Integer id); // consuntar um objto com esse ID(se existir vai voltar ele, se não vai voltar nulo).
     List<Seller> findAll();
+    List<Seller> findByDepartment(Department department);
 }
